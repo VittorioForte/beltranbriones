@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contactá a Grupo Briones. Terrenos, inversiones, proveedores y consultas generales. +54 911 2468 2070." />
+  <meta property="og:title" content="Contacto — Grupo Briones" />
+  <meta property="og:description" content="Ponete en contacto con Grupo Briones para terrenos, inversiones y consultas." />
+  <meta property="og:image" content="../assets/img/og-image.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="../assets/icons/favicon.ico" />
+  <title>Contacto — Grupo Briones</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="../index.html" class="navbar__logo">
+      <img src="../assets/img/logo-white.png" alt="Grupo Briones logo" />
+    </a>
+    <div class="navbar__links">
+      <a href="../index.html">Home</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="contacto.html" class="active">Contacto</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="../index.html">Home</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="proyectos.html">Proyectos</a>
+    <a href="contacto.html" class="active">Contacto</a>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="page-hero" style="min-height:45vh;">
+      <div class="blueprint-overlay"></div>
+      <div class="page-hero__content">
+        <p class="section-label">// Contacto</p>
+        <h1 class="hero__title" style="font-size:var(--section-title);">CONTACTO</h1>
+        <p class="hero__subtitle">Trabajemos juntos</p>
+      </div>
+    </section>
+
+    <!-- CONTACT SPLIT -->
+    <section class="section-padding" id="contactForm">
+      <div class="container">
+        <div class="contact-split">
+          <!-- Form -->
+          <div class="reveal">
+            <p class="section-label">// Envianos un mensaje</p>
+            <h2 class="section-title" style="font-size:1.8rem;">Formulario de contacto</h2>
+            <div class="gold-divider"></div>
+            <form id="contactFormEl" novalidate>
+              <!-- Honeypot -->
+              <div class="honeypot">
+                <label for="website">Website</label>
+                <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <div class="form-group">
+                <label for="name">Nombre completo</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Teléfono</label>
+                <input type="tel" id="phone" name="phone" placeholder="+54 911 ..." />
+              </div>
+              <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" placeholder="Contanos en qué podemos ayudarte" required></textarea>
+              </div>
+              <button type="submit" class="btn btn--filled" style="width:100%; justify-content:center;">Enviar mensaje</button>
+            </form>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="reveal">
+            <p class="section-label">// Información de contacto</p>
+            <h2 class="section-title" style="font-size:1.8rem;">Cómo contactarnos</h2>
+            <div class="gold-divider"></div>
+            <div class="contact-info-grid">
+              <div class="contact-info-item">
+                <p class="contact-info-item__label">Teléfono</p>
+                <a href="tel:+5491124682070">+54 911 2468 2070</a>
+              </div>
+              <div class="contact-info-item">
+                <p class="contact-info-item__label">WhatsApp</p>
+                <a href="https://wa.me/5491124682070" target="_blank" rel="noopener noreferrer">+54 911 2468 2070</a>
+              </div>
+              <div class="contact-info-item">
+                <p class="contact-info-item__label">Terrenos</p>
+                <a href="mailto:terrenos@grupobriones.com.ar">terrenos@grupobriones.com.ar</a>
+              </div>
+              <div class="contact-info-item">
+                <p class="contact-info-item__label">Proveedores</p>
+                <a href="mailto:proveedores@grupobriones.com.ar">proveedores@grupobriones.com.ar</a>
+              </div>
+              <div class="contact-info-item">
+                <p class="contact-info-item__label">General</p>
+                <a href="mailto:contacto@grupobriones.com.ar">contacto@grupobriones.com.ar</a>
+              </div>
+              <div class="contact-info-item">
+                <p class="contact-info-item__label">Calidad</p>
+                <a href="mailto:calidad@grupobriones.com.ar">calidad@grupobriones.com.ar</a>
+              </div>
+            </div>
+
+            <div class="mt-3">
+              <p class="section-label">// Ubicación</p>
+              <p style="color:var(--color-text-muted); line-height:1.8;">
+                Ciudad de Buenos Aires, Argentina
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REDES SOCIALES -->
+    <section class="section-padding" id="redesContacto" style="background:var(--color-bg-2);">
+      <div class="blueprint-overlay"></div>
+      <div class="container text-center">
+        <p class="section-label reveal">// Redes Sociales</p>
+        <h2 class="section-title reveal">Seguinos en redes</h2>
+        <div class="social-grid reveal mt-2">
+          <a href="https://instagram.com/beltranbriones" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i data-lucide="instagram"></i>
+            <span>Instagram</span>
+          </a>
+          <a href="https://tiktok.com/@beltran_briones" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+            <span>TikTok</span>
+          </a>
+          <a href="https://youtube.com/@beltranbriones" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <i data-lucide="youtube"></i>
+            <span>YouTube</span>
+          </a>
+          <a href="https://open.spotify.com/show/1I5xUdCczrZsHFyZJ2ESlX" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
+            <i data-lucide="music"></i>
+            <span>Spotify</span>
+          </a>
+          <a href="https://facebook.com/beltran.briones.9" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i data-lucide="facebook"></i>
+            <span>Facebook</span>
+          </a>
+          <a href="https://linkedin.com/in/beltr%C3%A1n-briones-4b6bb11b1" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i data-lucide="linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="blueprint-overlay"></div>
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="../assets/img/logo-white.png" alt="Grupo Briones" />
+        <p class="footer__tagline">Desarrollamos Buenos Aires desde adentro.</p>
+      </div>
+      <div>
+        <h4 class="footer__heading">Navegación</h4>
+        <div class="footer__links">
+          <a href="../index.html">Home</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="proyectos.html">Proyectos</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer__heading">Contacto</h4>
+        <div class="footer__links">
+          <a href="tel:+5491124682070">+54 911 2468 2070</a>
+          <a href="https://wa.me/5491124682070" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="mailto:contacto@grupobriones.com.ar">contacto@grupobriones.com.ar</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer__heading">Redes Sociales</h4>
+        <div class="footer__social">
+          <a href="https://instagram.com/beltranbriones" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+          <a href="https://tiktok.com/@beltran_briones" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+          <a href="https://youtube.com/@beltranbriones" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+          <a href="https://facebook.com/beltran.briones.9" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+          <a href="https://linkedin.com/in/beltr%C3%A1n-briones-4b6bb11b1" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Grupo Briones. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/5491124682070" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+    <i data-lucide="message-circle"></i>
+  </a>
+
+  <!-- PIXORA Watermark -->
+  <a href="https://pixora.com.ar/" class="pixora-watermark" target="_blank" rel="noopener noreferrer" aria-label="Developed by PIXORA">
+    <img src="../assets/img/pixora-logo.png" alt="PIXORA logo" />
+    <span>Developed by PIXORA</span>
+  </a>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="../js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Descubrí los proyectos residenciales de Grupo Briones en Buenos Aires y EEUU. Edificios de alta gama entregados y en construcción." />
+  <meta property="og:title" content="Proyectos — Grupo Briones" />
+  <meta property="og:description" content="Portfolio de edificios residenciales de alta calidad en Buenos Aires y Estados Unidos." />
+  <meta property="og:image" content="../assets/img/og-image.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="../assets/icons/favicon.ico" />
+  <title>Proyectos — Grupo Briones</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="../index.html" class="navbar__logo">
+      <img src="../assets/img/logo-white.png" alt="Grupo Briones logo" />
+    </a>
+    <div class="navbar__links">
+      <a href="../index.html">Home</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="proyectos.html" class="active">Proyectos</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="../index.html">Home</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="proyectos.html" class="active">Proyectos</a>
+    <a href="contacto.html">Contacto</a>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="page-hero">
+      <div class="blueprint-overlay"></div>
+      <div class="page-hero__content">
+        <p class="section-label">// Portfolio</p>
+        <h1 class="hero__title" style="font-size:var(--section-title);">NUESTROS PROYECTOS</h1>
+        <p class="hero__subtitle">Edificios que transforman Buenos Aires y el mundo</p>
+      </div>
+    </section>
+
+    <!-- FILTER + GRID -->
+    <section class="section-padding" id="projectGrid">
+      <div class="blueprint-overlay"></div>
+      <div class="container">
+        <!-- Filter buttons -->
+        <div class="filter-bar reveal">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="buenosaires">Buenos Aires</button>
+          <button class="filter-btn" data-filter="eeuu">EEUU</button>
+          <button class="filter-btn" data-filter="construccion">En construcción</button>
+          <button class="filter-btn" data-filter="entregado">Entregados</button>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="projects-grid" id="projectsGrid">
+
+          <div class="project-card reveal" data-category="buenosaires" data-status="entregado" data-project="torre-palermo"
+            data-name="Torre Palermo" data-location="Palermo, Buenos Aires" data-image="../assets/img/portfolio-1.jpg"
+            data-desc="Edificio residencial de 10 pisos en el corazón de Palermo, con diseño contemporáneo, amenities de primer nivel y la mejor conectividad de la ciudad. Departamentos de 1 a 3 ambientes con terminaciones premium."
+            data-pisos="10" data-unidades="42" data-superficie="3.200 m²" data-año="2019"
+            data-features="Piscina,SUM,Gym,Parrillas,Laundry,Seguridad 24hs,Cocheras">
+            <span class="project-card__badge">Entregado</span>
+            <img src="../assets/img/portfolio-1.jpg" alt="Torre Palermo" class="project-card__image" loading="lazy" />
+            <div class="project-card__overlay"><span>Ver proyecto →</span></div>
+            <div class="project-card__info">
+              <h3 class="project-card__name">Torre Palermo</h3>
+              <p class="project-card__location">Palermo, Buenos Aires</p>
+            </div>
+          </div>
+
+          <div class="project-card reveal" data-category="buenosaires" data-status="entregado" data-project="puerto-madero"
+            data-name="Puerto Madero Residences" data-location="Puerto Madero, Buenos Aires" data-image="../assets/img/portfolio-2.jpg"
+            data-desc="Complejo residencial premium frente al dique con vistas panorámicas al Río de la Plata. Arquitectura de vanguardia con fachada vidriada, pisos de porcelanato importado y cocinas equipadas."
+            data-pisos="18" data-unidades="96" data-superficie="8.500 m²" data-año="2021"
+            data-features="Piscina climatizada,Rooftop,Gym equipado,Sauna,Business center,Seguridad 24hs,Cocheras dobles">
+            <span class="project-card__badge">Entregado</span>
+            <img src="../assets/img/portfolio-2.jpg" alt="Puerto Madero Residences" class="project-card__image" loading="lazy" />
+            <div class="project-card__overlay"><span>Ver proyecto →</span></div>
+            <div class="project-card__info">
+              <h3 class="project-card__name">Puerto Madero Residences</h3>
+              <p class="project-card__location">Puerto Madero, Buenos Aires</p>
+            </div>
+          </div>
+
+          <div class="project-card reveal" data-category="buenosaires" data-status="entregado" data-project="recoleta-grand"
+            data-name="Recoleta Grand" data-location="Recoleta, Buenos Aires" data-image="../assets/img/portfolio-3.jpg"
+            data-desc="Residencias de lujo en una de las zonas más exclusivas de Buenos Aires. Fusión entre arquitectura clásica y diseño moderno, con detalles en mármol y tecnología de última generación."
+            data-pisos="8" data-unidades="24" data-superficie="2.800 m²" data-año="2022"
+            data-features="Lobby premium,SUM,Bauleras,Jardín interno,Seguridad 24hs,Cocheras">
+            <span class="project-card__badge">Entregado</span>
+            <img src="../assets/img/portfolio-3.jpg" alt="Recoleta Grand" class="project-card__image" loading="lazy" />
+            <div class="project-card__overlay"><span>Ver proyecto →</span></div>
+            <div class="project-card__info">
+              <h3 class="project-card__name">Recoleta Grand</h3>
+              <p class="project-card__location">Recoleta, Buenos Aires</p>
+            </div>
+          </div>
+
+          <div class="project-card reveal" data-category="eeuu" data-status="construccion" data-project="miami-bay"
+            data-name="Miami Bay Tower" data-location="Miami, EEUU" data-image="../assets/img/portfolio-4.jpg"
+            data-desc="Primer proyecto internacional de Grupo Briones. Torre de lujo frente a la bahía de Miami con unidades de 2 a 4 ambientes, infinity pool en el rooftop. Entrega estimada 2026."
+            data-pisos="22" data-unidades="120" data-superficie="12.000 m²" data-año="2026"
+            data-features="Infinity pool,Club house,Spa,Marina privada,Concierge 24hs,Smart home,Valet parking">
+            <span class="project-card__badge">En construcción</span>
+            <img src="../assets/img/portfolio-4.jpg" alt="Miami Bay Tower" class="project-card__image" loading="lazy" />
+            <div class="project-card__overlay"><span>Ver proyecto →</span></div>
+            <div class="project-card__info">
+              <h3 class="project-card__name">Miami Bay Tower</h3>
+              <p class="project-card__location">Miami, EEUU</p>
+            </div>
+          </div>
+
+          <div class="project-card reveal" data-category="buenosaires" data-status="entregado" data-project="belgrano-heights"
+            data-name="Belgrano Heights" data-location="Belgrano, Buenos Aires" data-image="../assets/img/portfolio-1.jpg"
+            data-desc="Edificio residencial de categoría en el exclusivo barrio de Belgrano. Unidades amplias con vistas al parque, cocheras cubiertas y amenities completos. Arquitectura moderna con terminaciones de alta gama."
+            data-pisos="12" data-unidades="36" data-superficie="4.100 m²" data-año="2020"
+            data-features="Piscina,Solarium,SUM,Gym,Bauleras,Seguridad 24hs,Cocheras">
+            <span class="project-card__badge">Entregado</span>
+            <img src="../assets/img/portfolio-1.jpg" alt="Belgrano Heights" class="project-card__image" loading="lazy" />
+            <div class="project-card__overlay"><span>Ver proyecto →</span></div>
+            <div class="project-card__info">
+              <h3 class="project-card__name">Belgrano Heights</h3>
+              <p class="project-card__location">Belgrano, Buenos Aires</p>
+            </div>
+          </div>
+
+          <div class="project-card reveal" data-category="buenosaires" data-status="entregado" data-project="caballito-park"
+            data-name="Caballito Park" data-location="Caballito, Buenos Aires" data-image="../assets/img/portfolio-2.jpg"
+            data-desc="Complejo de viviendas con parque interno en uno de los barrios más buscados de Buenos Aires. Departamentos luminosos con balcones verdes y acceso a espacios comunes de primer nivel."
+            data-pisos="9" data-unidades="54" data-superficie="3.800 m²" data-año="2021"
+            data-features="Parque interno,Juegos infantiles,SUM,Laundry,Bicicletero,Seguridad 24hs,Cocheras">
+            <span class="project-card__badge">Entregado</span>
+            <img src="../assets/img/portfolio-2.jpg" alt="Caballito Park" class="project-card__image" loading="lazy" />
+            <div class="project-card__overlay"><span>Ver proyecto →</span></div>
+            <div class="project-card__info">
+              <h3 class="project-card__name">Caballito Park</h3>
+              <p class="project-card__location">Caballito, Buenos Aires</p>
+            </div>
+          </div>
+
+          <div class="project-card reveal" data-category="buenosaires" data-status="construccion" data-project="nunez-residence"
+            data-name="Núñez Residence" data-location="Núñez, Buenos Aires" data-image="../assets/img/portfolio-3.jpg"
+            data-desc="Nuevo desarrollo residencial en Núñez con foco en sustentabilidad y eficiencia energética. Terraza verde, paneles solares y diseño bioclimático. Entrega estimada 2025."
+            data-pisos="7" data-unidades="28" data-superficie="2.400 m²" data-año="2025"
+            data-features="Terraza verde,Paneles solares,SUM,Bicicletero,Seguridad 24hs,Cocheras">
+            <span class="project-card__badge">En construcción</span>
+            <img src="../assets/img/portfolio-3.jpg" alt="Núñez Residence" class="project-card__image" loading="lazy" />
+            <div class="project-card__overlay"><span>Ver proyecto →</span></div>
+            <div class="project-card__info">
+              <h3 class="project-card__name">Núñez Residence</h3>
+              <p class="project-card__location">Núñez, Buenos Aires</p>
+            </div>
+          </div>
+
+          <div class="project-card reveal" data-category="buenosaires" data-status="entregado" data-project="villa-crespo-lofts"
+            data-name="Villa Crespo Lofts" data-location="Villa Crespo, Buenos Aires" data-image="../assets/img/portfolio-4.jpg"
+            data-desc="Lofts de diseño industrial en el vibrante barrio de Villa Crespo. Doble altura, grandes ventanales y espacios flexibles pensados para un estilo de vida joven y moderno."
+            data-pisos="5" data-unidades="20" data-superficie="1.600 m²" data-año="2018"
+            data-features="Diseño industrial,Doble altura,Rooftop social,Bicicletero,Seguridad 24hs">
+            <span class="project-card__badge">Entregado</span>
+            <img src="../assets/img/portfolio-4.jpg" alt="Villa Crespo Lofts" class="project-card__image" loading="lazy" />
+            <div class="project-card__overlay"><span>Ver proyecto →</span></div>
+            <div class="project-card__info">
+              <h3 class="project-card__name">Villa Crespo Lofts</h3>
+              <p class="project-card__location">Villa Crespo, Buenos Aires</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT DETAIL MODAL -->
+    <div class="project-modal" id="projectModal">
+      <div class="project-modal__backdrop" id="modalBackdrop"></div>
+      <div class="project-modal__content">
+        <button class="project-modal__close" id="modalClose" aria-label="Cerrar">✕</button>
+        <div class="project-modal__image-wrap">
+          <img id="modalImage" src="" alt="" />
+        </div>
+        <div class="project-modal__details">
+          <span class="project-modal__badge" id="modalBadge"></span>
+          <h2 class="project-modal__name" id="modalName"></h2>
+          <p class="project-modal__location" id="modalLocation">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span id="modalLocationText"></span>
+          </p>
+          <p class="project-modal__desc" id="modalDesc"></p>
+          <div class="project-modal__specs" id="modalSpecs"></div>
+          <div class="project-modal__features" id="modalFeatures">
+            <p class="project-modal__features-title">Amenities</p>
+            <div class="project-modal__features-list" id="modalFeaturesList"></div>
+          </div>
+          <div class="project-modal__cta">
+            <a href="contacto.html" class="btn btn--filled" style="width:100%;justify-content:center;">Consultar por este proyecto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <section class="section-padding cta-banner">
+      <div class="container text-center">
+        <p class="section-label reveal">// Invertí con nosotros</p>
+        <h2 class="section-title reveal">¿Tenés un terreno o querés invertir?</h2>
+        <p class="reveal" style="color:var(--color-text-muted); max-width:600px; margin:0 auto 2rem; line-height:1.8;">
+          Estamos siempre en búsqueda de nuevas oportunidades. Contactanos para explorar posibilidades juntos.
+        </p>
+        <a href="contacto.html" class="btn btn--filled reveal">Contactanos</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="blueprint-overlay"></div>
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="../assets/img/logo-white.png" alt="Grupo Briones" />
+        <p class="footer__tagline">Desarrollamos Buenos Aires desde adentro.</p>
+      </div>
+      <div>
+        <h4 class="footer__heading">Navegación</h4>
+        <div class="footer__links">
+          <a href="../index.html">Home</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="proyectos.html">Proyectos</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer__heading">Contacto</h4>
+        <div class="footer__links">
+          <a href="tel:+5491124682070">+54 911 2468 2070</a>
+          <a href="https://wa.me/5491124682070" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="mailto:contacto@grupobriones.com.ar">contacto@grupobriones.com.ar</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer__heading">Redes Sociales</h4>
+        <div class="footer__social">
+          <a href="https://instagram.com/beltranbriones" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+          <a href="https://tiktok.com/@beltran_briones" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+          <a href="https://youtube.com/@beltranbriones" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+          <a href="https://facebook.com/beltran.briones.9" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+          <a href="https://linkedin.com/in/beltr%C3%A1n-briones-4b6bb11b1" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Grupo Briones. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- PIXORA Watermark -->
+  <a href="https://pixora.com.ar/" class="pixora-watermark" target="_blank" rel="noopener noreferrer" aria-label="Developed by PIXORA">
+    <img src="../assets/img/pixora-logo.png" alt="PIXORA logo" />
+    <span>Developed by PIXORA</span>
+  </a>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="../js/proyectos.js"></script>
+</body>
+</html>

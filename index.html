@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Grupo Briones — Desarrolladora inmobiliaria de vanguardia en Buenos Aires. 12 edificios entregados, más de 12 años de trayectoria." />
+  <meta property="og:title" content="Grupo Briones — Desarrolladora Inmobiliaria" />
+  <meta property="og:description"
+    content="Desarrollamos Buenos Aires desde adentro. Más de 12 edificios residenciales de alta gama." />
+  <meta property="og:image" content="assets/img/og-image.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/icons/favicon.ico" />
+  <title>Grupo Briones — Desarrolladora Inmobiliaria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- =========== NAVBAR =========== -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="navbar__logo">
+      <img src="assets/img/logo-white.png" alt="Grupo Briones logo" />
+    </a>
+    <div class="navbar__links">
+      <a href="index.html" class="active">Home</a>
+      <a href="pages/nosotros.html">Nosotros</a>
+      <a href="pages/proyectos.html">Proyectos</a>
+      <a href="pages/contacto.html">Contacto</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html" class="active">Home</a>
+    <a href="pages/nosotros.html">Nosotros</a>
+    <a href="pages/proyectos.html">Proyectos</a>
+    <a href="pages/contacto.html">Contacto</a>
+  </div>
+
+  <main>
+
+    <!-- =========== HERO — 3D THREE.JS =========== -->
+    <section class="hero" id="hero">
+      <div class="hero-canvas-wrap" id="heroCanvas"></div>
+      <div class="hero-mobile-fallback">
+        <img src="assets/img/hero.jpg" alt="Buenos Aires skyline — Grupo Briones" />
+      </div>
+      <div class="hero__overlay" id="heroOverlay">
+        <p class="hero__top-label">Buenos Aires / Argentina / Est. 2012</p>
+        <h1 class="hero__title">GRUPO BRIONES</h1>
+        <p class="hero__subtitle">Desarrollamos Buenos Aires desde adentro</p>
+        <div class="hero__ctas">
+          <a href="pages/proyectos.html" class="btn btn--filled">Conocé nuestros proyectos</a>
+          <a href="https://wa.me/5491124682070" target="_blank" rel="noopener noreferrer" class="btn btn--ghost"
+            aria-label="Contactar por WhatsApp">Hablar con nosotros</a>
+        </div>
+      </div>
+      <div class="hero__scroll-indicator" id="scrollIndicator">
+        <span>Scroll para descubrir</span>
+        <div class="chevron"></div>
+      </div>
+    </section>
+
+    <!-- =========== STATS COUNTER BAR =========== -->
+    <section class="stats-bar" id="statsBar">
+      <div class="stats-bar__grid">
+        <div class="stat-item reveal">
+          <div class="stat-item__number">
+            <span class="bracket">[</span><span class="counter" data-target="12">0</span><span class="bracket">]</span>
+          </div>
+          <div class="stat-item__label">Edificios entregados</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-1">
+          <div class="stat-item__number">
+            <span class="bracket">[</span><span class="counter" data-target="850">0</span><span class="bracket">]</span>
+          </div>
+          <div class="stat-item__label">Departamentos entregados</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-2">
+          <div class="stat-item__number">
+            <span class="bracket">[</span><span class="counter" data-target="12">0</span>+<span class="bracket">]</span>
+          </div>
+          <div class="stat-item__label">Años de trayectoria</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-3">
+          <div class="stat-item__number">
+            <span class="bracket">[</span><span class="counter" data-target="2">0</span><span class="bracket">]</span>
+          </div>
+          <div class="stat-item__label">Países</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== ACTIVIDAD DE LA EMPRESA =========== -->
+    <section class="section-padding" id="proceso">
+      <div class="blueprint-overlay"></div>
+      <div class="container">
+        <p class="section-label reveal">// Nuestra Actividad</p>
+        <h2 class="section-title reveal">Proceso de Desarrollo</h2>
+        <div class="timeline">
+          <div class="timeline__line"></div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div>
+              <div class="timeline__icon"><i data-lucide="map-pin"></i></div>
+              <p class="timeline__number">PASO 01</p>
+              <h3 class="timeline__step-title">Compra de Terrenos</h3>
+              <p class="timeline__step-desc">Identificamos y adquirimos ubicaciones estratégicas en los barrios más
+                valorados de Buenos Aires y el extranjero.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div>
+              <div class="timeline__icon"><i data-lucide="ruler"></i></div>
+              <p class="timeline__number">PASO 02</p>
+              <h3 class="timeline__step-title">Diseño Arquitectónico</h3>
+              <p class="timeline__step-desc">Creamos planos innovadores junto a los mejores estudios de arquitectura,
+                priorizando funcionalidad y estética de vanguardia.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div>
+              <div class="timeline__icon"><i data-lucide="building-2"></i></div>
+              <p class="timeline__number">PASO 03</p>
+              <h3 class="timeline__step-title">Construcción</h3>
+              <p class="timeline__step-desc">Ejecutamos la obra con los más altos estándares de calidad, supervisando
+                cada etapa del proceso constructivo.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div>
+              <div class="timeline__icon"><i data-lucide="trending-up"></i></div>
+              <p class="timeline__number">PASO 04</p>
+              <h3 class="timeline__step-title">Comercialización</h3>
+              <p class="timeline__step-desc">Gestionamos la venta de cada departamento con transparencia, asesoramiento
+                personalizado y financiación accesible.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div>
+              <div class="timeline__icon"><i data-lucide="key-round"></i></div>
+              <p class="timeline__number">PASO 05</p>
+              <h3 class="timeline__step-title">Entrega Final</h3>
+              <p class="timeline__step-desc">Entregamos las llaves a cada propietario, garantizando la máxima
+                satisfacción y acompañamiento post-venta.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== REFERENTE DEL REAL ESTATE =========== -->
+    <section class="section-padding" id="referente">
+      <div class="container">
+        <div class="split">
+          <img src="assets/img/beltran-hero.png" alt="Beltrán Briones — Cofundador de Grupo Briones"
+            class="split__image reveal" loading="lazy" />
+          <div class="split__content reveal">
+            <p class="section-label">// Referente del Real Estate</p>
+            <h2 class="section-title">Beltrán Briones</h2>
+            <div class="gold-divider"></div>
+            <ul class="achievement-list">
+              <li>Cofundador de Grupo Briones</li>
+              <li>12 edificios residenciales en Buenos Aires y EEUU</li>
+              <li>Cofundador de El Club del Ladrillo — el podcast de Real Estate más escuchado del país</li>
+              <li>Orador en UBA, UADE, UB, UCA, UTDT, San Andrés, UCEMA</li>
+              <li>Speaker en Expo Real Estate y Expo Construcción de Neuquén</li>
+              <li>Autor del best seller "El Método Briones" — mayor lanzamiento en Mercado Libre</li>
+              <li>Más de 1.000.000 de seguidores en redes sociales</li>
+            </ul>
+            <div class="mt-2">
+              <a href="pages/nosotros.html" class="btn">Conocer más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== PROYECTOS PREVIEW =========== -->
+    <section class="section-padding" id="proyectosPreview" style="background: var(--color-bg-2);">
+      <div class="blueprint-overlay"></div>
+      <div class="container">
+        <p class="section-label reveal">// Nuestros Proyectos</p>
+        <h2 class="section-title reveal">Portfolio</h2>
+        <div class="projects-grid">
+          <div class="project-card reveal" data-project="torre-palermo" data-name="Torre Palermo"
+            data-location="Palermo, Buenos Aires" data-status="Entregado" data-image="assets/img/portfolio-1.jpg"
+            data-desc="Edificio residencial de 10 pisos en el corazón de Palermo, con diseño contemporáneo, amenities de primer nivel y la mejor conectividad de la ciudad. Departamentos de 1 a 3 ambientes con terminaciones premium y balcones aterrazados."
+            data-pisos="10" data-unidades="42" data-superficie="3.200 m²" data-año="2019"
+            data-features="Piscina,SUM,Gym,Parrillas,Laundry,Seguridad 24hs,Cocheras">
+            <span class="project-card__badge">Entregado</span>
+            <img src="assets/img/portfolio-1.jpg" alt="Torre Palermo" class="project-card__image" loading="lazy" />
+            <div class="project-card__overlay"><span>Ver proyecto →</span></div>
+            <div class="project-card__info">
+              <h3 class="project-card__name">Torre Palermo</h3>
+              <p class="project-card__location">Palermo, Buenos Aires</p>
+            </div>
+          </div>
+          <div class="project-card reveal reveal-delay-1" data-project="puerto-madero"
+            data-name="Puerto Madero Residences" data-location="Puerto Madero, Buenos Aires" data-status="Entregado"
+            data-image="assets/img/portfolio-2.jpg"
+            data-desc="Complejo residencial premium frente al dique con vistas panorámicas al Río de la Plata. Arquitectura de vanguardia con fachada vidriada, pisos de porcelanato importado y cocinas equipadas. El proyecto insignia de Grupo Briones."
+            data-pisos="18" data-unidades="96" data-superficie="8.500 m²" data-año="2021"
+            data-features="Piscina climatizada,Rooftop,Gym equipado,Sauna,Business center,Seguridad 24hs,Cocheras dobles">
+            <span class="project-card__badge">Entregado</span>
+            <img src="assets/img/portfolio-2.jpg" alt="Puerto Madero Residences" class="project-card__image"
+              loading="lazy" />
+            <div class="project-card__overlay"><span>Ver proyecto →</span></div>
+            <div class="project-card__info">
+              <h3 class="project-card__name">Puerto Madero Residences</h3>
+              <p class="project-card__location">Puerto Madero, Buenos Aires</p>
+            </div>
+          </div>
+          <div class="project-card reveal reveal-delay-2" data-project="recoleta-grand" data-name="Recoleta Grand"
+            data-location="Recoleta, Buenos Aires" data-status="Entregado" data-image="assets/img/portfolio-3.jpg"
+            data-desc="Residencias de lujo en una de las zonas más exclusivas de Buenos Aires. Fusión entre arquitectura clásica y diseño moderno, con detalles en mármol, molduras de época restauradas y tecnología de última generación integrada."
+            data-pisos="8" data-unidades="24" data-superficie="2.800 m²" data-año="2022"
+            data-features="Lobby premium,SUM,Bauleras,Jardín interno,Seguridad 24hs,Cocheras">
+            <span class="project-card__badge">Entregado</span>
+            <img src="assets/img/portfolio-3.jpg" alt="Recoleta Grand" class="project-card__image" loading="lazy" />
+            <div class="project-card__overlay"><span>Ver proyecto →</span></div>
+            <div class="project-card__info">
+              <h3 class="project-card__name">Recoleta Grand</h3>
+              <p class="project-card__location">Recoleta, Buenos Aires</p>
+            </div>
+          </div>
+          <div class="project-card reveal reveal-delay-3" data-project="miami-bay" data-name="Miami Bay Tower"
+            data-location="Miami, EEUU" data-status="En construcción" data-image="assets/img/portfolio-4.jpg"
+            data-desc="Primer proyecto internacional de Grupo Briones. Torre de lujo frente a la bahía de Miami con unidades de 2 a 4 ambientes, infinity pool en el rooftop y acceso directo al waterfront. Entrega estimada 2026."
+            data-pisos="22" data-unidades="120" data-superficie="12.000 m²" data-año="2026"
+            data-features="Infinity pool,Club house,Spa,Marina privada,Concierge 24hs,Smart home,Valet parking">
+            <span class="project-card__badge">En construcción</span>
+            <img src="assets/img/portfolio-4.jpg" alt="Miami Bay Tower" class="project-card__image" loading="lazy" />
+            <div class="project-card__overlay"><span>Ver proyecto →</span></div>
+            <div class="project-card__info">
+              <h3 class="project-card__name">Miami Bay Tower</h3>
+              <p class="project-card__location">Miami, EEUU</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-3 reveal">
+          <a href="pages/proyectos.html" class="btn">Ver todos los proyectos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== PROJECT DETAIL MODAL =========== -->
+    <div class="project-modal" id="projectModal">
+      <div class="project-modal__backdrop" id="modalBackdrop"></div>
+      <div class="project-modal__content">
+        <button class="project-modal__close" id="modalClose" aria-label="Cerrar">✕</button>
+        <div class="project-modal__image-wrap">
+          <img id="modalImage" src="" alt="" />
+        </div>
+        <div class="project-modal__details">
+          <span class="project-modal__badge" id="modalBadge"></span>
+          <h2 class="project-modal__name" id="modalName"></h2>
+          <p class="project-modal__location" id="modalLocation">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            <span id="modalLocationText"></span>
+          </p>
+          <p class="project-modal__desc" id="modalDesc"></p>
+          <div class="project-modal__specs" id="modalSpecs"></div>
+          <div class="project-modal__features" id="modalFeatures">
+            <p class="project-modal__features-title">Amenities</p>
+            <div class="project-modal__features-list" id="modalFeaturesList"></div>
+          </div>
+          <div class="project-modal__cta">
+            <a href="pages/contacto.html" class="btn btn--filled" style="width:100%;justify-content:center;">Consultar
+              por este proyecto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- =========== EL CLUB DEL LADRILLO =========== -->
+    <section class="section-padding podcast-section" id="podcast">
+      <div class="container text-center">
+        <p class="section-label reveal">// Podcast</p>
+        <h2 class="section-title reveal">El Club del Ladrillo</h2>
+        <div class="gold-divider" style="margin: 2rem auto;"></div>
+        <p class="reveal"
+          style="max-width:600px; margin:0 auto 2rem; color: var(--color-text-muted); font-size: 1.05rem; line-height:1.8;">
+          El podcast de Real Estate más escuchado del país. Conversaciones sobre inversiones, construcción y el mercado
+          inmobiliario argentino.
+        </p>
+        <a href="https://open.spotify.com/show/1I5xUdCczrZsHFyZJ2ESlX" target="_blank" rel="noopener noreferrer"
+          class="btn reveal" aria-label="Escuchar en Spotify">
+          <i data-lucide="headphones"></i> Escuchar en Spotify
+        </a>
+      </div>
+    </section>
+
+    <!-- =========== LIBRO =========== -->
+    <section class="section-padding book-section" id="libro">
+      <div class="container">
+        <div class="split">
+          <div class="split__content reveal">
+            <p class="section-label">// Best Seller</p>
+            <h2 class="section-title">El Método Briones</h2>
+            <div class="gold-divider"></div>
+            <p style="color:var(--color-text-muted); line-height:1.8; margin-bottom:2rem;">
+              El libro que revolucionó la forma de pensar el real estate en Argentina. Con más de miles de copias
+              vendidas, se convirtió en el mayor lanzamiento de su categoría en Mercado Libre. Una guía práctica para
+              quienes quieren invertir, construir y transformar el mercado inmobiliario.
+            </p>
+            <a href="https://www.mercadolibre.com.ar/libro-el-metodo-briones--beltran-briones/up/MLAU3759673539"
+              class="btn btn--filled" target="_blank" rel="noopener noreferrer">Conseguí tu ejemplar</a>
+          </div>
+          <img src="assets/img/book-cover.png" alt="Libro El Método Briones" class="split__image reveal" loading="lazy"
+            style="aspect-ratio:auto; max-width:350px; margin:0 auto; border:none;" />
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== REDES SOCIALES =========== -->
+    <section class="section-padding" id="redes" style="background: var(--color-bg-2);">
+      <div class="container text-center">
+        <p class="section-label reveal">// Comunidad</p>
+        <h2 class="section-title reveal">1.000.000+ de seguidores</h2>
+        <div class="gold-divider" style="margin:2rem auto;"></div>
+        <div class="social-grid reveal">
+          <a href="https://instagram.com/beltranbriones" target="_blank" rel="noopener noreferrer"
+            aria-label="Instagram">
+            <i data-lucide="instagram"></i>
+            <span>Instagram</span>
+          </a>
+          <a href="https://tiktok.com/@beltran_briones" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+            </svg>
+            <span>TikTok</span>
+          </a>
+          <a href="https://youtube.com/@beltranbriones" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <i data-lucide="youtube"></i>
+            <span>YouTube</span>
+          </a>
+          <a href="https://open.spotify.com/show/1I5xUdCczrZsHFyZJ2ESlX" target="_blank" rel="noopener noreferrer"
+            aria-label="Spotify">
+            <i data-lucide="music"></i>
+            <span>Spotify</span>
+          </a>
+          <a href="https://facebook.com/beltran.briones.9" target="_blank" rel="noopener noreferrer"
+            aria-label="Facebook">
+            <i data-lucide="facebook"></i>
+            <span>Facebook</span>
+          </a>
+          <a href="https://linkedin.com/in/beltr%C3%A1n-briones-4b6bb11b1" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn">
+            <i data-lucide="linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========== FOOTER =========== -->
+  <footer class="footer">
+    <div class="blueprint-overlay"></div>
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="assets/img/logo-white.png" alt="Grupo Briones" />
+        <p class="footer__tagline">Desarrollamos Buenos Aires desde adentro.</p>
+      </div>
+      <div>
+        <h4 class="footer__heading">Navegación</h4>
+        <div class="footer__links">
+          <a href="index.html">Home</a>
+          <a href="pages/nosotros.html">Nosotros</a>
+          <a href="pages/proyectos.html">Proyectos</a>
+          <a href="pages/contacto.html">Contacto</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer__heading">Contacto</h4>
+        <div class="footer__links">
+          <a href="tel:+5491124682070">+54 911 2468 2070</a>
+          <a href="https://wa.me/5491124682070" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="mailto:contacto@grupobriones.com.ar">contacto@grupobriones.com.ar</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer__heading">Redes Sociales</h4>
+        <div class="footer__social">
+          <a href="https://instagram.com/beltranbriones" target="_blank" rel="noopener noreferrer"
+            aria-label="Instagram"><i data-lucide="instagram"></i></a>
+          <a href="https://tiktok.com/@beltran_briones" target="_blank" rel="noopener noreferrer"
+            aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+              <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+            </svg></a>
+          <a href="https://youtube.com/@beltranbriones" target="_blank" rel="noopener noreferrer"
+            aria-label="YouTube"><i data-lucide="youtube"></i></a>
+          <a href="https://facebook.com/beltran.briones.9" target="_blank" rel="noopener noreferrer"
+            aria-label="Facebook"><i data-lucide="facebook"></i></a>
+          <a href="https://linkedin.com/in/beltr%C3%A1n-briones-4b6bb11b1" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Grupo Briones. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- PIXORA Watermark -->
+  <a href="https://pixora.com.ar/" class="pixora-watermark" target="_blank" rel="noopener noreferrer"
+    aria-label="Developed by PIXORA">
+    <img src="assets/img/pixora-logo.png" alt="PIXORA logo" />
+    <span>Developed by PIXORA</span>
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/home.js"></script>
+</body>
+
+</html>
